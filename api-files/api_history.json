@@ -8,5 +8,10 @@
     "console_version": "6.5.2",
     "date": "2018-01-18",
     "checksum": "39e231b04de2b9656d416265a2911e694c5e1e31"
+  },
+  {
+    "console_version": "6.5.3",
+    "date": "2018-01-24",
+    "checksum": "85036d0a091b94a176eace301124207c7c7bb904"
   }
 ]

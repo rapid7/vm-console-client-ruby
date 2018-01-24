@@ -19,7 +19,7 @@ module Rapid7VmConsole
     attr_accessor :asset
 
     # Discovery performance settings used during a scan.
-    attr_accessor :perfomance
+    attr_accessor :performance
 
     # Service discovery settings used during a scan.
     attr_accessor :service
@@ -29,7 +29,7 @@ module Rapid7VmConsole
     def self.attribute_map
       {
         :'asset' => :'asset',
-        :'perfomance' => :'perfomance',
+        :'performance' => :'performance',
         :'service' => :'service'
       }
     end
@@ -38,7 +38,7 @@ module Rapid7VmConsole
     def self.swagger_types
       {
         :'asset' => :'ScanTemplateAssetDiscovery',
-        :'perfomance' => :'ScanTemplateDiscoveryPerformance',
+        :'performance' => :'ScanTemplateDiscoveryPerformance',
         :'service' => :'ScanTemplateServiceDiscovery'
       }
     end
@@ -55,8 +55,8 @@ module Rapid7VmConsole
         self.asset = attributes[:'asset']
       end
 
-      if attributes.has_key?(:'perfomance')
-        self.perfomance = attributes[:'perfomance']
+      if attributes.has_key?(:'performance')
+        self.performance = attributes[:'performance']
       end
 
       if attributes.has_key?(:'service')
@@ -84,7 +84,7 @@ module Rapid7VmConsole
       return true if self.equal?(o)
       self.class == o.class &&
           asset == o.asset &&
-          perfomance == o.perfomance &&
+          performance == o.performance &&
           service == o.service
     end
 
@@ -97,7 +97,7 @@ module Rapid7VmConsole
     # Calculates hash code according to all attributes.
     # @return [Fixnum] Hash code
     def hash
-      [asset, perfomance, service].hash
+      [asset, performance, service].hash
     end
 
     # Builds the object from hash
