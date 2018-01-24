@@ -38,7 +38,7 @@ describe 'ScanTemplateDiscovery' do
     end
   end
 
-  describe 'test attribute "perfomance"' do
+  describe 'test attribute "performance"' do
     it 'should work' do
        # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
