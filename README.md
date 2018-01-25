@@ -13,6 +13,32 @@ artifacts, users can begin interacting with the Rapid7 InsightVM/Nexpose API wit
 
 Once pushed to rubygems.org, the gem can be installed with: `gem install rapid7_vm_console`
 
+## Auto-generating code
+The code and resulting gem of this repository have been auto generated using [Swagger Codegen](https://github.com/swagger-api/swagger-codegen)
+along with the most recent Rapid7 InsightVM/Nexpose Swagger file. After each new console release, the script found
+at `setup_workspac/setup_workspace.rb` is run to check if any changes have been made to the API Swagger file. If changes
+exist, the script automates the download of swagger-codegen-cli.jar, updates the version, and executes the jar generate
+process. An example command for running codegen to generate Ruby source is below:
+```
+java -jar swagger-codegen-cli-2.3.0.jar generate \
+         -i api-files/console-swagger-6.5.3.json \ 
+         -l ruby \
+         -o ./ \
+         -c setup_workspace/config.json 
+```
+
+Any issues or questions regarding Swagger Codegen should be directed to the [Swagger Codegen](https://github.com/swagger-api/swagger-codegen)
+Github repository.
+
+## Versioning and Releases
+Currently any generated gems are prerelease and are following X.Y.Z-{CONSOLE_VERSION} versioning. It will be decided
+whether a two version system will be followed or a single version decoupled from the Console version. Feedback is greatly
+appreciated.
+
+Whenever a new version of the API is released, the most up to date and past releases will be found 
+[here](https://github.com/rapid7/vm-console-client-ruby/releases) along with generated tags. Once the maintainers feel 
+comfortable with the state of this repository, releases will also be pushed to Rubygems.org. 
+
 # Auto-generated README Below
 ## Overview   
 This guide documents the InsightVM Application Programming Interface (API) Version 3. This API supports the Representation State Transfer (REST) design pattern. Unless noted otherwise this API accepts and produces the `application/json` media type. This API uses Hypermedia as the Engine of Application State (HATEOAS) and is hypermedia friendly. All API connections must be made to the security console using HTTPS.  
