@@ -36,6 +36,9 @@ module Rapid7VmConsole
     # The protocol of the service the result was discovered on.
     attr_accessor :protocol
 
+    # The date and time the result was first recorded, in the ISO8601 format. If the result changes status this value is the date and time of the status change.
+    attr_accessor :since
+
     # The status of the vulnerability check result.
     attr_accessor :status
 
@@ -71,6 +74,7 @@ module Rapid7VmConsole
         :'port' => :'port',
         :'proof' => :'proof',
         :'protocol' => :'protocol',
+        :'since' => :'since',
         :'status' => :'status'
       }
     end
@@ -85,6 +89,7 @@ module Rapid7VmConsole
         :'port' => :'Integer',
         :'proof' => :'String',
         :'protocol' => :'String',
+        :'since' => :'String',
         :'status' => :'String'
       }
     end
@@ -127,6 +132,10 @@ module Rapid7VmConsole
 
       if attributes.has_key?(:'protocol')
         self.protocol = attributes[:'protocol']
+      end
+
+      if attributes.has_key?(:'since')
+        self.since = attributes[:'since']
       end
 
       if attributes.has_key?(:'status')
@@ -189,6 +198,7 @@ module Rapid7VmConsole
           port == o.port &&
           proof == o.proof &&
           protocol == o.protocol &&
+          since == o.since &&
           status == o.status
     end
 
@@ -201,7 +211,7 @@ module Rapid7VmConsole
     # Calculates hash code according to all attributes.
     # @return [Fixnum] Hash code
     def hash
-      [check_id, exceptions, key, links, port, proof, protocol, status].hash
+      [check_id, exceptions, key, links, port, proof, protocol, since, status].hash
     end
 
     # Builds the object from hash

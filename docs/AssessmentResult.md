@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **port** | **Integer** | The port of the service the result was discovered on. | [optional] 
 **proof** | **String** | The proof explaining why the result was found vulnerable. The proof may container embedded HTML formatting markup. | [optional] 
 **protocol** | **String** | The protocol of the service the result was discovered on. | [optional] 
+**since** | **String** | The date and time the result was first recorded, in the ISO8601 format. If the result changes status this value is the date and time of the status change. | [optional] 
 **status** | **String** | The status of the vulnerability check result. | 
 
 
