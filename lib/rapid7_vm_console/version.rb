@@ -11,5 +11,5 @@ Swagger Codegen version: 2.3.0
 =end
 
 module Rapid7VmConsole
-  VERSION = "0.0.1-6.5.3"
+  VERSION = "0.0.1-6.5.4"
 end
