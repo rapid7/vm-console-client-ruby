@@ -88,15 +88,6 @@ Net::HTTP.start(uri.host, uri.port, :use_ssl => uri.scheme == 'https', :verify_m
 end
 
 if previous_version == '0.0.0' || Digest::SHA1.file(swagger_file) != Digest::SHA1.file(previous_swagger_file)
-  puts 'New version of API to be used for generating library. Cleaning up working directory...'
-  # Remove previous directories and files from generation
-  cleanup_files = ['.swagger-codegen', 'docs', 'lib', 'spec', '.rspec', 'Gemfile', 'Gemfile.lock' ,
-                   'git_push.sh', 'Rakefile', 'rapid7_vm_console.gemspec', 'README.md']
-
-  cleanup_files.each do |file|
-    FileUtils.rm_rf(file)
-  end
-
   puts 'Updating config.json version to: ' + gem_version
   config_location = 'setup_workspace/config.json'
   config = JSON.parse(File.read(config_location))
