@@ -27,7 +27,7 @@ require 'rapid7_vm_console'
 api_instance = Rapid7VmConsole::CredentialApi.new
 
 opts = { 
-  param0: Rapid7VmConsole::SharedCredential.new # SharedCredential | The specification of a shared credential.
+  credential: Rapid7VmConsole::SharedCredential.new # SharedCredential | The specification of a shared credential.
 }
 
 begin
@@ -43,7 +43,7 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **param0** | [**SharedCredential**](SharedCredential.md)| The specification of a shared credential. | [optional] 
+ **credential** | [**SharedCredential**](SharedCredential.md)| The specification of a shared credential. | [optional] 
 
 ### Return type
 
@@ -253,7 +253,7 @@ api_instance = Rapid7VmConsole::CredentialApi.new
 id = 56 # Integer | The identifier of the credential.
 
 opts = { 
-  param1: Rapid7VmConsole::SharedCredential.new # SharedCredential | The specification of the shared credential to update.
+  credential: Rapid7VmConsole::SharedCredential.new # SharedCredential | The specification of the shared credential to update.
 }
 
 begin
@@ -270,7 +270,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the credential. | 
- **param1** | [**SharedCredential**](SharedCredential.md)| The specification of the shared credential to update. | [optional] 
+ **credential** | [**SharedCredential**](SharedCredential.md)| The specification of the shared credential to update. | [optional] 
 
 ### Return type
 

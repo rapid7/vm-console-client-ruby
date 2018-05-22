@@ -1,6 +1,6 @@
 ---
 :console:
-  :host: 'localhost:3780'
+  :host: '10.3.23.100:3780'
   :user: 'nxadmin'
   :pass: 'nxpassword'
   :verify_ssl: false

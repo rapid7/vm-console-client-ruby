@@ -29,7 +29,7 @@ require 'rapid7_vm_console'
 api_instance = Rapid7VmConsole::PolicyOverrideApi.new
 
 opts = { 
-  param0: Rapid7VmConsole::PolicyOverride.new # PolicyOverride | The specification of a policy override. Allows users to override the compliance result of a policy rule.
+  policy_override: Rapid7VmConsole::PolicyOverride.new # PolicyOverride | The specification of a policy override. Allows users to override the compliance result of a policy rule.
 }
 
 begin
@@ -45,7 +45,7 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **param0** | [**PolicyOverride**](PolicyOverride.md)| The specification of a policy override. Allows users to override the compliance result of a policy rule. | [optional] 
+ **policy_override** | [**PolicyOverride**](PolicyOverride.md)| The specification of a policy override. Allows users to override the compliance result of a policy rule. | [optional] 
 
 ### Return type
 
@@ -319,7 +319,7 @@ api_instance = Rapid7VmConsole::PolicyOverrideApi.new
 id = 789 # Integer | The identifier of the policy override.
 
 opts = { 
-  param1: "param1_example" # String | The date the policy override is set to expire. Date is represented in ISO 8601 format.
+  expiration: "expiration_example" # String | The date the policy override is set to expire. Date is represented in ISO 8601 format.
 }
 
 begin
@@ -336,7 +336,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the policy override. | 
- **param1** | **String**| The date the policy override is set to expire. Date is represented in ISO 8601 format. | [optional] 
+ **expiration** | **String**| The date the policy override is set to expire. Date is represented in ISO 8601 format. | [optional] 
 
 ### Return type
 
@@ -372,7 +372,7 @@ id = 789 # Integer | The identifier of the policy override.
 status = "status_example" # String | Policy Override Status
 
 opts = { 
-  param2: "param2_example" # String | A comment describing the change of the policy override status.
+  comment: "comment_example" # String | A comment describing the change of the policy override status.
 }
 
 begin
@@ -389,7 +389,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the policy override. | 
  **status** | **String**| Policy Override Status | 
- **param2** | **String**| A comment describing the change of the policy override status. | [optional] 
+ **comment** | **String**| A comment describing the change of the policy override status. | [optional] 
 
 ### Return type
 

@@ -17,7 +17,7 @@ Method | HTTP request | Description
 
 
 # **create_sonar_query**
-> CreatedReferenceDiscoveryQueryIDLink create_sonar_query(param0)
+> CreatedReferenceDiscoveryQueryIDLink create_sonar_query(opts)
 
 Sonar Queries
 
@@ -30,12 +30,13 @@ require 'rapid7_vm_console'
 
 api_instance = Rapid7VmConsole::AssetDiscoveryApi.new
 
-param0 = Rapid7VmConsole::SonarQuery.new # SonarQuery | param0
-
+opts = { 
+  query: Rapid7VmConsole::SonarQuery.new # SonarQuery | The criteria for a Sonar query.
+}
 
 begin
   #Sonar Queries
-  result = api_instance.create_sonar_query(param0)
+  result = api_instance.create_sonar_query(opts)
   p result
 rescue Rapid7VmConsole::ApiError => e
   puts "Exception when calling AssetDiscoveryApi->create_sonar_query: #{e}"
@@ -46,7 +47,7 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **param0** | [**SonarQuery**](SonarQuery.md)| param0 | 
+ **query** | [**SonarQuery**](SonarQuery.md)| The criteria for a Sonar query. | [optional] 
 
 ### Return type
 
@@ -391,7 +392,7 @@ No authorization required
 
 
 # **sonar_query_search**
-> Array&lt;DiscoveryAsset&gt; sonar_query_search(param0)
+> Array&lt;DiscoveryAsset&gt; sonar_query_search(opts)
 
 Sonar Query Search
 
@@ -404,12 +405,13 @@ require 'rapid7_vm_console'
 
 api_instance = Rapid7VmConsole::AssetDiscoveryApi.new
 
-param0 = Rapid7VmConsole::SonarCriteria.new # SonarCriteria | param0
-
+opts = { 
+  query: Rapid7VmConsole::SonarCriteria.new # SonarCriteria | The criteria for a Sonar query.
+}
 
 begin
   #Sonar Query Search
-  result = api_instance.sonar_query_search(param0)
+  result = api_instance.sonar_query_search(opts)
   p result
 rescue Rapid7VmConsole::ApiError => e
   puts "Exception when calling AssetDiscoveryApi->sonar_query_search: #{e}"
@@ -420,7 +422,7 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **param0** | [**SonarCriteria**](SonarCriteria.md)| param0 | 
+ **query** | [**SonarCriteria**](SonarCriteria.md)| The criteria for a Sonar query. | [optional] 
 
 ### Return type
 
@@ -438,7 +440,7 @@ No authorization required
 
 
 # **update_sonar_query**
-> Links update_sonar_query(id, param1)
+> Links update_sonar_query(id, opts)
 
 Sonar Query
 
@@ -453,12 +455,13 @@ api_instance = Rapid7VmConsole::AssetDiscoveryApi.new
 
 id = 789 # Integer | The identifier of the Sonar query.
 
-param1 = Rapid7VmConsole::SonarQuery.new # SonarQuery | param1
-
+opts = { 
+  query: Rapid7VmConsole::SonarQuery.new # SonarQuery | The criteria for a Sonar query.
+}
 
 begin
   #Sonar Query
-  result = api_instance.update_sonar_query(id, param1)
+  result = api_instance.update_sonar_query(id, opts)
   p result
 rescue Rapid7VmConsole::ApiError => e
   puts "Exception when calling AssetDiscoveryApi->update_sonar_query: #{e}"
@@ -470,7 +473,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the Sonar query. | 
- **param1** | [**SonarQuery**](SonarQuery.md)| param1 | 
+ **query** | [**SonarQuery**](SonarQuery.md)| The criteria for a Sonar query. | [optional] 
 
 ### Return type
 

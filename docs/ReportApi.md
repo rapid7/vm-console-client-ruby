@@ -34,7 +34,7 @@ require 'rapid7_vm_console'
 api_instance = Rapid7VmConsole::ReportApi.new
 
 opts = { 
-  param0: Rapid7VmConsole::Report.new # Report | The specification of a report configuration.
+  report: Rapid7VmConsole::Report.new # Report | The specification of a report configuration.
 }
 
 begin
@@ -50,7 +50,7 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **param0** | [**Report**](Report.md)| The specification of a report configuration. | [optional] 
+ **report** | [**Report**](Report.md)| The specification of a report configuration. | [optional] 
 
 ### Return type
 
@@ -603,7 +603,7 @@ api_instance = Rapid7VmConsole::ReportApi.new
 id = 56 # Integer | The identifier of the report.
 
 opts = { 
-  param1: Rapid7VmConsole::Report.new # Report | The specification of a report configuration.
+  report: Rapid7VmConsole::Report.new # Report | The specification of a report configuration.
 }
 
 begin
@@ -620,7 +620,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the report. | 
- **param1** | [**Report**](Report.md)| The specification of a report configuration. | [optional] 
+ **report** | [**Report**](Report.md)| The specification of a report configuration. | [optional] 
 
 ### Return type
 

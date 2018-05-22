@@ -98,7 +98,7 @@ api_instance = Rapid7VmConsole::AssetApi.new
 id = 56 # Integer | The identifier of the site.
 
 opts = { 
-  param1: Rapid7VmConsole::AssetCreate.new # AssetCreate | The details of the asset being added or updated.  The operating system can be specified in one of three ways, with the order of precedence: `\"osFingerprint\"`, `\"os\"`, `\"cpe\"`
+  asset: Rapid7VmConsole::AssetCreate.new # AssetCreate | The details of the asset being added or updated.  The operating system can be specified in one of three ways, with the order of precedence: `\"osFingerprint\"`, `\"os\"`, `\"cpe\"`
 }
 
 begin
@@ -115,7 +115,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the site. | 
- **param1** | [**AssetCreate**](AssetCreate.md)| The details of the asset being added or updated.  The operating system can be specified in one of three ways, with the order of precedence: &#x60;\&quot;osFingerprint\&quot;&#x60;, &#x60;\&quot;os\&quot;&#x60;, &#x60;\&quot;cpe\&quot;&#x60; | [optional] 
+ **asset** | [**AssetCreate**](AssetCreate.md)| The details of the asset being added or updated.  The operating system can be specified in one of three ways, with the order of precedence: &#x60;\&quot;osFingerprint\&quot;&#x60;, &#x60;\&quot;os\&quot;&#x60;, &#x60;\&quot;cpe\&quot;&#x60; | [optional] 
 
 ### Return type
 

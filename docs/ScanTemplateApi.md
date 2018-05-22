@@ -26,7 +26,7 @@ require 'rapid7_vm_console'
 api_instance = Rapid7VmConsole::ScanTemplateApi.new
 
 opts = { 
-  param0: Rapid7VmConsole::ScanTemplate.new # ScanTemplate | The details of the scan template.
+  scan_template: Rapid7VmConsole::ScanTemplate.new # ScanTemplate | The details of the scan template.
 }
 
 begin
@@ -42,7 +42,7 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **param0** | [**ScanTemplate**](ScanTemplate.md)| The details of the scan template. | [optional] 
+ **scan_template** | [**ScanTemplate**](ScanTemplate.md)| The details of the scan template. | [optional] 
 
 ### Return type
 
@@ -211,7 +211,7 @@ api_instance = Rapid7VmConsole::ScanTemplateApi.new
 id = "id_example" # String | The identifier of the scan template
 
 opts = { 
-  param1: Rapid7VmConsole::ScanTemplate.new # ScanTemplate | The details of the scan template.
+  scan_template: Rapid7VmConsole::ScanTemplate.new # ScanTemplate | The details of the scan template.
 }
 
 begin
@@ -228,7 +228,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **String**| The identifier of the scan template | 
- **param1** | [**ScanTemplate**](ScanTemplate.md)| The details of the scan template. | [optional] 
+ **scan_template** | [**ScanTemplate**](ScanTemplate.md)| The details of the scan template. | [optional] 
 
 ### Return type
 

@@ -202,7 +202,7 @@ require 'rapid7_vm_console'
 api_instance = Rapid7VmConsole::SiteApi.new
 
 opts = { 
-  param0: Rapid7VmConsole::SiteCreateResource.new # SiteCreateResource | Resource for creating a site configuration.
+  site: Rapid7VmConsole::SiteCreateResource.new # SiteCreateResource | Resource for creating a site configuration.
 }
 
 begin
@@ -218,7 +218,7 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **param0** | [**SiteCreateResource**](SiteCreateResource.md)| Resource for creating a site configuration. | [optional] 
+ **site** | [**SiteCreateResource**](SiteCreateResource.md)| Resource for creating a site configuration. | [optional] 
 
 ### Return type
 
@@ -252,7 +252,7 @@ api_instance = Rapid7VmConsole::SiteApi.new
 id = 56 # Integer | The identifier of the site.
 
 opts = { 
-  param1: Rapid7VmConsole::SiteCredential.new # SiteCredential | The specification of a site credential.
+  site_credential: Rapid7VmConsole::SiteCredential.new # SiteCredential | The specification of a site credential.
 }
 
 begin
@@ -269,7 +269,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the site. | 
- **param1** | [**SiteCredential**](SiteCredential.md)| The specification of a site credential. | [optional] 
+ **site_credential** | [**SiteCredential**](SiteCredential.md)| The specification of a site credential. | [optional] 
 
 ### Return type
 
@@ -303,7 +303,7 @@ api_instance = Rapid7VmConsole::SiteApi.new
 id = 56 # Integer | The identifier of the site.
 
 opts = { 
-  param0: Rapid7VmConsole::ScanSchedule.new # ScanSchedule | Resource for a scan schedule.
+  scan_schedule: Rapid7VmConsole::ScanSchedule.new # ScanSchedule | Resource for a scan schedule.
 }
 
 begin
@@ -320,7 +320,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the site. | 
- **param0** | [**ScanSchedule**](ScanSchedule.md)| Resource for a scan schedule. | [optional] 
+ **scan_schedule** | [**ScanSchedule**](ScanSchedule.md)| Resource for a scan schedule. | [optional] 
 
 ### Return type
 
@@ -354,7 +354,7 @@ api_instance = Rapid7VmConsole::SiteApi.new
 id = 56 # Integer | The identifier of the site.
 
 opts = { 
-  param0: Rapid7VmConsole::SmtpAlert.new # SmtpAlert | Resource for creating a new SMTP alert.
+  alert: Rapid7VmConsole::SmtpAlert.new # SmtpAlert | Resource for creating a new SMTP alert.
 }
 
 begin
@@ -371,7 +371,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the site. | 
- **param0** | [**SmtpAlert**](SmtpAlert.md)| Resource for creating a new SMTP alert. | [optional] 
+ **alert** | [**SmtpAlert**](SmtpAlert.md)| Resource for creating a new SMTP alert. | [optional] 
 
 ### Return type
 
@@ -405,7 +405,7 @@ api_instance = Rapid7VmConsole::SiteApi.new
 id = 56 # Integer | The identifier of the site.
 
 opts = { 
-  param0: Rapid7VmConsole::SnmpAlert.new # SnmpAlert | Resource for creating a new SNMP alert.
+  alert: Rapid7VmConsole::SnmpAlert.new # SnmpAlert | Resource for creating a new SNMP alert.
 }
 
 begin
@@ -422,7 +422,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the site. | 
- **param0** | [**SnmpAlert**](SnmpAlert.md)| Resource for creating a new SNMP alert. | [optional] 
+ **alert** | [**SnmpAlert**](SnmpAlert.md)| Resource for creating a new SNMP alert. | [optional] 
 
 ### Return type
 
@@ -456,7 +456,7 @@ api_instance = Rapid7VmConsole::SiteApi.new
 id = 56 # Integer | The identifier of the site.
 
 opts = { 
-  param0: Rapid7VmConsole::SyslogAlert.new # SyslogAlert | Resource for creating a new Syslog alert.
+  alert: Rapid7VmConsole::SyslogAlert.new # SyslogAlert | Resource for creating a new Syslog alert.
 }
 
 begin
@@ -473,7 +473,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the site. | 
- **param0** | [**SyslogAlert**](SyslogAlert.md)| Resource for creating a new Syslog alert. | [optional] 
+ **alert** | [**SyslogAlert**](SyslogAlert.md)| Resource for creating a new Syslog alert. | [optional] 
 
 ### Return type
 
@@ -1088,7 +1088,7 @@ id = 56 # Integer | The identifier of the site.
 credential_id = 56 # Integer | The identifier of the shared credential.
 
 opts = { 
-  param0: true # BOOLEAN | Flag indicating whether the shared credential is enabled for the site's scans.
+  status: true # BOOLEAN | Flag indicating whether the shared credential is enabled for the site's scans.
 }
 
 begin
@@ -1106,7 +1106,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the site. | 
  **credential_id** | **Integer**| The identifier of the shared credential. | 
- **param0** | **BOOLEAN**| Flag indicating whether the shared credential is enabled for the site&#39;s scans. | [optional] 
+ **status** | **BOOLEAN**| Flag indicating whether the shared credential is enabled for the site&#39;s scans. | [optional] 
 
 ### Return type
 
@@ -1142,7 +1142,7 @@ id = 56 # Integer | The identifier of the site.
 credential_id = 56 # Integer | The identifier of the site credential.
 
 opts = { 
-  param0: true # BOOLEAN | Flag indicating whether the credential is enabled for use during the scan.
+  status: true # BOOLEAN | Flag indicating whether the credential is enabled for use during the scan.
 }
 
 begin
@@ -1160,7 +1160,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the site. | 
  **credential_id** | **Integer**| The identifier of the site credential. | 
- **param0** | **BOOLEAN**| Flag indicating whether the credential is enabled for use during the scan. | [optional] 
+ **status** | **BOOLEAN**| Flag indicating whether the credential is enabled for use during the scan. | [optional] 
 
 ### Return type
 
@@ -2929,7 +2929,7 @@ api_instance = Rapid7VmConsole::SiteApi.new
 id = 56 # Integer | The identifier of the site.
 
 opts = { 
-  param1: [Rapid7VmConsole::SiteCredential.new] # Array<SiteCredential> | A list of site credentials resources.
+  site_credentials: [Rapid7VmConsole::SiteCredential.new] # Array<SiteCredential> | A list of site credentials resources.
 }
 
 begin
@@ -2946,7 +2946,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the site. | 
- **param1** | [**Array&lt;SiteCredential&gt;**](SiteCredential.md)| A list of site credentials resources. | [optional] 
+ **site_credentials** | [**Array&lt;SiteCredential&gt;**](SiteCredential.md)| A list of site credentials resources. | [optional] 
 
 ### Return type
 
@@ -2980,7 +2980,7 @@ api_instance = Rapid7VmConsole::SiteApi.new
 id = 56 # Integer | The identifier of the site.
 
 opts = { 
-  param0: 789 # Integer | The identifier of the discovery connection.
+  connection_id: 789 # Integer | The identifier of the discovery connection.
 }
 
 begin
@@ -2997,7 +2997,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the site. | 
- **param0** | **Integer**| The identifier of the discovery connection. | [optional] 
+ **connection_id** | **Integer**| The identifier of the discovery connection. | [optional] 
 
 ### Return type
 
@@ -3081,7 +3081,7 @@ api_instance = Rapid7VmConsole::SiteApi.new
 id = 56 # Integer | The identifier of the site.
 
 opts = { 
-  param0: 56 # Integer | The identifier of the scan engine.
+  scan_engine_id: 56 # Integer | The identifier of the scan engine.
 }
 
 begin
@@ -3098,7 +3098,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the site. | 
- **param0** | **Integer**| The identifier of the scan engine. | [optional] 
+ **scan_engine_id** | **Integer**| The identifier of the scan engine. | [optional] 
 
 ### Return type
 
@@ -3132,7 +3132,7 @@ api_instance = Rapid7VmConsole::SiteApi.new
 id = 56 # Integer | The identifier of the site.
 
 opts = { 
-  param0: [Rapid7VmConsole::ScanSchedule.new] # Array<ScanSchedule> | Array of resources for updating all scan schedules defined in the site. Scan schedules defined in the site that are omitted from this request will be deleted from the site.
+  scan_schedules: [Rapid7VmConsole::ScanSchedule.new] # Array<ScanSchedule> | Array of resources for updating all scan schedules defined in the site. Scan schedules defined in the site that are omitted from this request will be deleted from the site.
 }
 
 begin
@@ -3149,7 +3149,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the site. | 
- **param0** | [**Array&lt;ScanSchedule&gt;**](ScanSchedule.md)| Array of resources for updating all scan schedules defined in the site. Scan schedules defined in the site that are omitted from this request will be deleted from the site. | [optional] 
+ **scan_schedules** | [**Array&lt;ScanSchedule&gt;**](ScanSchedule.md)| Array of resources for updating all scan schedules defined in the site. Scan schedules defined in the site that are omitted from this request will be deleted from the site. | [optional] 
 
 ### Return type
 
@@ -3183,7 +3183,7 @@ api_instance = Rapid7VmConsole::SiteApi.new
 id = 56 # Integer | The identifier of the site.
 
 opts = { 
-  param0: "param0_example" # String | The identifier of the scan template.
+  scan_template_id: "scan_template_id_example" # String | The identifier of the scan template.
 }
 
 begin
@@ -3200,7 +3200,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the site. | 
- **param0** | **String**| The identifier of the scan template. | [optional] 
+ **scan_template_id** | **String**| The identifier of the scan template. | [optional] 
 
 ### Return type
 
@@ -3234,7 +3234,7 @@ api_instance = Rapid7VmConsole::SiteApi.new
 id = 56 # Integer | The identifier of the site.
 
 opts = { 
-  param0: [Rapid7VmConsole::SmtpAlert.new] # Array<SmtpAlert> | Array of resources for updating all SMTP alerts defined in the site. Alerts defined in the site that are omitted from this request will be deleted from the site.
+  alert: [Rapid7VmConsole::SmtpAlert.new] # Array<SmtpAlert> | Array of resources for updating all SMTP alerts defined in the site. Alerts defined in the site that are omitted from this request will be deleted from the site.
 }
 
 begin
@@ -3251,7 +3251,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the site. | 
- **param0** | [**Array&lt;SmtpAlert&gt;**](SmtpAlert.md)| Array of resources for updating all SMTP alerts defined in the site. Alerts defined in the site that are omitted from this request will be deleted from the site. | [optional] 
+ **alert** | [**Array&lt;SmtpAlert&gt;**](SmtpAlert.md)| Array of resources for updating all SMTP alerts defined in the site. Alerts defined in the site that are omitted from this request will be deleted from the site. | [optional] 
 
 ### Return type
 
@@ -3285,7 +3285,7 @@ api_instance = Rapid7VmConsole::SiteApi.new
 id = 56 # Integer | The identifier of the site.
 
 opts = { 
-  param0: [Rapid7VmConsole::SnmpAlert.new] # Array<SnmpAlert> | Array of resources for updating all SNMP alerts defined in the site. Alerts defined in the site that are omitted from this request will be deleted from the site.
+  alert: [Rapid7VmConsole::SnmpAlert.new] # Array<SnmpAlert> | Array of resources for updating all SNMP alerts defined in the site. Alerts defined in the site that are omitted from this request will be deleted from the site.
 }
 
 begin
@@ -3302,7 +3302,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the site. | 
- **param0** | [**Array&lt;SnmpAlert&gt;**](SnmpAlert.md)| Array of resources for updating all SNMP alerts defined in the site. Alerts defined in the site that are omitted from this request will be deleted from the site. | [optional] 
+ **alert** | [**Array&lt;SnmpAlert&gt;**](SnmpAlert.md)| Array of resources for updating all SNMP alerts defined in the site. Alerts defined in the site that are omitted from this request will be deleted from the site. | [optional] 
 
 ### Return type
 
@@ -3336,7 +3336,7 @@ api_instance = Rapid7VmConsole::SiteApi.new
 id = 56 # Integer | The identifier of the site.
 
 opts = { 
-  param0: [Rapid7VmConsole::SyslogAlert.new] # Array<SyslogAlert> | Array of resources for updating all Syslog alerts defined in the site. Alerts defined in the site that are omitted from this request will be deleted from the site.
+  alert: [Rapid7VmConsole::SyslogAlert.new] # Array<SyslogAlert> | Array of resources for updating all Syslog alerts defined in the site. Alerts defined in the site that are omitted from this request will be deleted from the site.
 }
 
 begin
@@ -3353,7 +3353,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the site. | 
- **param0** | [**Array&lt;SyslogAlert&gt;**](SyslogAlert.md)| Array of resources for updating all Syslog alerts defined in the site. Alerts defined in the site that are omitted from this request will be deleted from the site. | [optional] 
+ **alert** | [**Array&lt;SyslogAlert&gt;**](SyslogAlert.md)| Array of resources for updating all Syslog alerts defined in the site. Alerts defined in the site that are omitted from this request will be deleted from the site. | [optional] 
 
 ### Return type
 
@@ -3387,7 +3387,7 @@ api_instance = Rapid7VmConsole::SiteApi.new
 id = 56 # Integer | The identifier of the site.
 
 opts = { 
-  param1: [Rapid7VmConsole::Array<Integer>.new] # Array<Integer> | A list of tag identifiers to replace the site's tags.
+  tags: [Rapid7VmConsole::Array<Integer>.new] # Array<Integer> | A list of tag identifiers to replace the site's tags.
 }
 
 begin
@@ -3404,7 +3404,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the site. | 
- **param1** | **Array&lt;Integer&gt;**| A list of tag identifiers to replace the site&#39;s tags. | [optional] 
+ **tags** | **Array&lt;Integer&gt;**| A list of tag identifiers to replace the site&#39;s tags. | [optional] 
 
 ### Return type
 
@@ -3438,7 +3438,7 @@ api_instance = Rapid7VmConsole::SiteApi.new
 id = 56 # Integer | The identifier of the site.
 
 opts = { 
-  param0: [Rapid7VmConsole::Array<Integer>.new] # Array<Integer> | A list of user identifiers to replace the site's access list.
+  users: [Rapid7VmConsole::Array<Integer>.new] # Array<Integer> | A list of user identifiers to replace the site's access list.
 }
 
 begin
@@ -3455,7 +3455,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the site. | 
- **param0** | **Array&lt;Integer&gt;**| A list of user identifiers to replace the site&#39;s access list. | [optional] 
+ **users** | **Array&lt;Integer&gt;**| A list of user identifiers to replace the site&#39;s access list. | [optional] 
 
 ### Return type
 
@@ -3489,7 +3489,7 @@ api_instance = Rapid7VmConsole::SiteApi.new
 id = 56 # Integer | The identifier of the site.
 
 opts = { 
-  param0: [Rapid7VmConsole::Array<Integer>.new] # Array<Integer> | Array of asset group identifiers.
+  asset_group_ids: [Rapid7VmConsole::Array<Integer>.new] # Array<Integer> | Array of asset group identifiers.
 }
 
 begin
@@ -3506,7 +3506,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the site. | 
- **param0** | **Array&lt;Integer&gt;**| Array of asset group identifiers. | [optional] 
+ **asset_group_ids** | **Array&lt;Integer&gt;**| Array of asset group identifiers. | [optional] 
 
 ### Return type
 
@@ -3540,7 +3540,7 @@ api_instance = Rapid7VmConsole::SiteApi.new
 id = 56 # Integer | The identifier of the site.
 
 opts = { 
-  param0: [Rapid7VmConsole::Array<String>.new] # Array<String> | List of addresses to be the site's new excluded scan targets. Each address is a string that can represent either a hostname, ipv4 address, ipv4 address range, ipv6 address, or CIDR notation.
+  scan_targets: [Rapid7VmConsole::Array<String>.new] # Array<String> | List of addresses to be the site's new excluded scan targets. Each address is a string that can represent either a hostname, ipv4 address, ipv4 address range, ipv6 address, or CIDR notation.
 }
 
 begin
@@ -3557,7 +3557,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the site. | 
- **param0** | **Array&lt;String&gt;**| List of addresses to be the site&#39;s new excluded scan targets. Each address is a string that can represent either a hostname, ipv4 address, ipv4 address range, ipv6 address, or CIDR notation. | [optional] 
+ **scan_targets** | **Array&lt;String&gt;**| List of addresses to be the site&#39;s new excluded scan targets. Each address is a string that can represent either a hostname, ipv4 address, ipv4 address range, ipv6 address, or CIDR notation. | [optional] 
 
 ### Return type
 
@@ -3591,7 +3591,7 @@ api_instance = Rapid7VmConsole::SiteApi.new
 id = 56 # Integer | The identifier of the site.
 
 opts = { 
-  param0: [Rapid7VmConsole::Array<Integer>.new] # Array<Integer> | Array of asset group identifiers.
+  asset_group_ids: [Rapid7VmConsole::Array<Integer>.new] # Array<Integer> | Array of asset group identifiers.
 }
 
 begin
@@ -3608,7 +3608,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the site. | 
- **param0** | **Array&lt;Integer&gt;**| Array of asset group identifiers. | [optional] 
+ **asset_group_ids** | **Array&lt;Integer&gt;**| Array of asset group identifiers. | [optional] 
 
 ### Return type
 
@@ -3642,7 +3642,7 @@ api_instance = Rapid7VmConsole::SiteApi.new
 id = 56 # Integer | The identifier of the site.
 
 opts = { 
-  param0: [Rapid7VmConsole::Array<String>.new] # Array<String> | List of addresses to be the site's new included scan targets. Each address is a string that can represent either a hostname, ipv4 address, ipv4 address range, ipv6 address, or CIDR notation.
+  scan_targets: [Rapid7VmConsole::Array<String>.new] # Array<String> | List of addresses to be the site's new included scan targets. Each address is a string that can represent either a hostname, ipv4 address, ipv4 address range, ipv6 address, or CIDR notation.
 }
 
 begin
@@ -3659,7 +3659,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the site. | 
- **param0** | **Array&lt;String&gt;**| List of addresses to be the site&#39;s new included scan targets. Each address is a string that can represent either a hostname, ipv4 address, ipv4 address range, ipv6 address, or CIDR notation. | [optional] 
+ **scan_targets** | **Array&lt;String&gt;**| List of addresses to be the site&#39;s new included scan targets. Each address is a string that can represent either a hostname, ipv4 address, ipv4 address range, ipv6 address, or CIDR notation. | [optional] 
 
 ### Return type
 
@@ -3693,7 +3693,7 @@ api_instance = Rapid7VmConsole::SiteApi.new
 id = 56 # Integer | The identifier of the site.
 
 opts = { 
-  param0: Rapid7VmConsole::SiteUpdateResource.new # SiteUpdateResource | Resource for updating a site configuration.
+  site: Rapid7VmConsole::SiteUpdateResource.new # SiteUpdateResource | Resource for updating a site configuration.
 }
 
 begin
@@ -3710,7 +3710,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the site. | 
- **param0** | [**SiteUpdateResource**](SiteUpdateResource.md)| Resource for updating a site configuration. | [optional] 
+ **site** | [**SiteUpdateResource**](SiteUpdateResource.md)| Resource for updating a site configuration. | [optional] 
 
 ### Return type
 
@@ -3746,7 +3746,7 @@ id = 56 # Integer | The identifier of the site.
 credential_id = 56 # Integer | The identifier of the site credential.
 
 opts = { 
-  param2: Rapid7VmConsole::SiteCredential.new # SiteCredential | The specification of the site credential to update.
+  site_credential: Rapid7VmConsole::SiteCredential.new # SiteCredential | The specification of the site credential to update.
 }
 
 begin
@@ -3764,7 +3764,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the site. | 
  **credential_id** | **Integer**| The identifier of the site credential. | 
- **param2** | [**SiteCredential**](SiteCredential.md)| The specification of the site credential to update. | [optional] 
+ **site_credential** | [**SiteCredential**](SiteCredential.md)| The specification of the site credential to update. | [optional] 
 
 ### Return type
 
@@ -3798,7 +3798,7 @@ api_instance = Rapid7VmConsole::SiteApi.new
 id = 56 # Integer | The identifier of the site.
 
 opts = { 
-  param0: Rapid7VmConsole::SiteOrganization.new # SiteOrganization | Resource for updating the specified site's organization information.
+  site_organization: Rapid7VmConsole::SiteOrganization.new # SiteOrganization | Resource for updating the specified site's organization information.
 }
 
 begin
@@ -3815,7 +3815,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the site. | 
- **param0** | [**SiteOrganization**](SiteOrganization.md)| Resource for updating the specified site&#39;s organization information. | [optional] 
+ **site_organization** | [**SiteOrganization**](SiteOrganization.md)| Resource for updating the specified site&#39;s organization information. | [optional] 
 
 ### Return type
 
@@ -3851,7 +3851,7 @@ id = 56 # Integer | The identifier of the site.
 schedule_id = 56 # Integer | The identifier of the scan schedule.
 
 opts = { 
-  param0: Rapid7VmConsole::ScanSchedule.new # ScanSchedule | Resource for updating the specified scan schedule.
+  scan_schedule: Rapid7VmConsole::ScanSchedule.new # ScanSchedule | Resource for updating the specified scan schedule.
 }
 
 begin
@@ -3869,7 +3869,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the site. | 
  **schedule_id** | **Integer**| The identifier of the scan schedule. | 
- **param0** | [**ScanSchedule**](ScanSchedule.md)| Resource for updating the specified scan schedule. | [optional] 
+ **scan_schedule** | [**ScanSchedule**](ScanSchedule.md)| Resource for updating the specified scan schedule. | [optional] 
 
 ### Return type
 
@@ -3905,7 +3905,7 @@ id = 56 # Integer | The identifier of the site.
 alert_id = 56 # Integer | The identifier of the alert.
 
 opts = { 
-  param0: Rapid7VmConsole::SmtpAlert.new # SmtpAlert | Resource for updating the specified SMTP alert.
+  alert: Rapid7VmConsole::SmtpAlert.new # SmtpAlert | Resource for updating the specified SMTP alert.
 }
 
 begin
@@ -3923,7 +3923,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the site. | 
  **alert_id** | **Integer**| The identifier of the alert. | 
- **param0** | [**SmtpAlert**](SmtpAlert.md)| Resource for updating the specified SMTP alert. | [optional] 
+ **alert** | [**SmtpAlert**](SmtpAlert.md)| Resource for updating the specified SMTP alert. | [optional] 
 
 ### Return type
 
@@ -3959,7 +3959,7 @@ id = 56 # Integer | The identifier of the site.
 alert_id = 56 # Integer | The identifier of the alert.
 
 opts = { 
-  param0: Rapid7VmConsole::SnmpAlert.new # SnmpAlert | Resource for updating the specified SNMP alert.
+  alert: Rapid7VmConsole::SnmpAlert.new # SnmpAlert | Resource for updating the specified SNMP alert.
 }
 
 begin
@@ -3977,7 +3977,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the site. | 
  **alert_id** | **Integer**| The identifier of the alert. | 
- **param0** | [**SnmpAlert**](SnmpAlert.md)| Resource for updating the specified SNMP alert. | [optional] 
+ **alert** | [**SnmpAlert**](SnmpAlert.md)| Resource for updating the specified SNMP alert. | [optional] 
 
 ### Return type
 
@@ -4013,7 +4013,7 @@ id = 56 # Integer | The identifier of the site.
 alert_id = 56 # Integer | The identifier of the alert.
 
 opts = { 
-  param0: Rapid7VmConsole::SyslogAlert.new # SyslogAlert | Resource for updating the specified Syslog alert.
+  alert: Rapid7VmConsole::SyslogAlert.new # SyslogAlert | Resource for updating the specified Syslog alert.
 }
 
 begin
@@ -4031,7 +4031,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the site. | 
  **alert_id** | **Integer**| The identifier of the alert. | 
- **param0** | [**SyslogAlert**](SyslogAlert.md)| Resource for updating the specified Syslog alert. | [optional] 
+ **alert** | [**SyslogAlert**](SyslogAlert.md)| Resource for updating the specified Syslog alert. | [optional] 
 
 ### Return type
 

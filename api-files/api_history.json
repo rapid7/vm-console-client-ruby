@@ -18,5 +18,10 @@
     "console_version": "6.5.4",
     "date": "2018-02-02",
     "checksum": "1fb97dfa9a9e5b6d80653e1224fad69c1e1aae32"
+  },
+  {
+    "console_version": "6.5.19",
+    "date": "2018-05-22",
+    "checksum": "b8df9b32db5559edd61ed5f0770fd2fc00a5d86a"
   }
 ]

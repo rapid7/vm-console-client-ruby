@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **pem_key** | **String** |  | [optional] 
 **permission_elevation** | **String** |  | [optional] 
 **permission_elevation_password** | **String** |  | [optional] 
-**permission_elevation_user_name** | **String** |  | [optional] 
+**permission_elevation_username** | **String** |  | [optional] 
 **privacy_password** | **String** |  | [optional] 
 **privacy_type** | **String** |  | [optional] 
 **private_key_password** | **String** |  | [optional] 
