@@ -89,7 +89,7 @@ require 'rapid7_vm_console'
 api_instance = Rapid7VmConsole::ScanEngineApi.new
 
 opts = { 
-  param0: Rapid7VmConsole::ScanEngine.new # ScanEngine | The specification of a scan engine.
+  scan_engine: Rapid7VmConsole::ScanEngine.new # ScanEngine | The specification of a scan engine.
 }
 
 begin
@@ -105,7 +105,7 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **param0** | [**ScanEngine**](ScanEngine.md)| The specification of a scan engine. | [optional] 
+ **scan_engine** | [**ScanEngine**](ScanEngine.md)| The specification of a scan engine. | [optional] 
 
 ### Return type
 
@@ -137,7 +137,7 @@ require 'rapid7_vm_console'
 api_instance = Rapid7VmConsole::ScanEngineApi.new
 
 opts = { 
-  param0: Rapid7VmConsole::EnginePool.new # EnginePool | The details for the scan engine to update.
+  engine_pool: Rapid7VmConsole::EnginePool.new # EnginePool | The details for the scan engine to update.
 }
 
 begin
@@ -153,7 +153,7 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **param0** | [**EnginePool**](EnginePool.md)| The details for the scan engine to update. | [optional] 
+ **engine_pool** | [**EnginePool**](EnginePool.md)| The details for the scan engine to update. | [optional] 
 
 ### Return type
 
@@ -758,7 +758,7 @@ api_instance = Rapid7VmConsole::ScanEngineApi.new
 id = 56 # Integer | The identifier of the engine pool.
 
 opts = { 
-  param1: [Rapid7VmConsole::Array<Integer>.new] # Array<Integer> | The identifiers of the scan engines to place into the engine pool.
+  engines: [Rapid7VmConsole::Array<Integer>.new] # Array<Integer> | The identifiers of the scan engines to place into the engine pool.
 }
 
 begin
@@ -775,7 +775,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the engine pool. | 
- **param1** | **Array&lt;Integer&gt;**| The identifiers of the scan engines to place into the engine pool. | [optional] 
+ **engines** | **Array&lt;Integer&gt;**| The identifiers of the scan engines to place into the engine pool. | [optional] 
 
 ### Return type
 
@@ -809,7 +809,7 @@ api_instance = Rapid7VmConsole::ScanEngineApi.new
 id = 56 # Integer | The identifier of the scan engine.
 
 opts = { 
-  param1: Rapid7VmConsole::ScanEngine.new # ScanEngine | The specification of the scan engine to update.
+  scan_engine: Rapid7VmConsole::ScanEngine.new # ScanEngine | The specification of the scan engine to update.
 }
 
 begin
@@ -826,7 +826,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the scan engine. | 
- **param1** | [**ScanEngine**](ScanEngine.md)| The specification of the scan engine to update. | [optional] 
+ **scan_engine** | [**ScanEngine**](ScanEngine.md)| The specification of the scan engine to update. | [optional] 
 
 ### Return type
 
@@ -860,7 +860,7 @@ api_instance = Rapid7VmConsole::ScanEngineApi.new
 id = 56 # Integer | The identifier of the engine pool.
 
 opts = { 
-  param1: Rapid7VmConsole::EnginePool.new # EnginePool | The details for the scan engine to update.
+  engine_pool: Rapid7VmConsole::EnginePool.new # EnginePool | The details for the scan engine to update.
 }
 
 begin
@@ -877,7 +877,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the engine pool. | 
- **param1** | [**EnginePool**](EnginePool.md)| The details for the scan engine to update. | [optional] 
+ **engine_pool** | [**EnginePool**](EnginePool.md)| The details for the scan engine to update. | [optional] 
 
 ### Return type
 

@@ -77,7 +77,7 @@ require 'rapid7_vm_console'
 api_instance = Rapid7VmConsole::AdministrationApi.new
 
 opts = { 
-  param0: "param0_example" # String | The console command to execute.
+  command: "command_example" # String | The console command to execute.
 }
 
 begin
@@ -93,7 +93,7 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **param0** | **String**| The console command to execute. | [optional] 
+ **command** | **String**| The console command to execute. | [optional] 
 
 ### Return type
 

@@ -192,7 +192,7 @@ require 'rapid7_vm_console'
 api_instance = Rapid7VmConsole::AssetGroupApi.new
 
 opts = { 
-  param0: Rapid7VmConsole::AssetGroup.new # AssetGroup | The details of the asset group.
+  asset_group: Rapid7VmConsole::AssetGroup.new # AssetGroup | The details of the asset group.
 }
 
 begin
@@ -208,7 +208,7 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **param0** | [**AssetGroup**](AssetGroup.md)| The details of the asset group. | [optional] 
+ **asset_group** | [**AssetGroup**](AssetGroup.md)| The details of the asset group. | [optional] 
 
 ### Return type
 
@@ -824,7 +824,7 @@ api_instance = Rapid7VmConsole::AssetGroupApi.new
 id = 56 # Integer | The identifier of the asset group.
 
 opts = { 
-  param1: Rapid7VmConsole::SearchCriteria.new # SearchCriteria | The search criteria specification.
+  criteria: Rapid7VmConsole::SearchCriteria.new # SearchCriteria | The search criteria specification.
 }
 
 begin
@@ -841,7 +841,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the asset group. | 
- **param1** | [**SearchCriteria**](SearchCriteria.md)| The search criteria specification. | [optional] 
+ **criteria** | [**SearchCriteria**](SearchCriteria.md)| The search criteria specification. | [optional] 
 
 ### Return type
 
@@ -875,7 +875,7 @@ api_instance = Rapid7VmConsole::AssetGroupApi.new
 id = 56 # Integer | The identifier of the asset group.
 
 opts = { 
-  param1: [Rapid7VmConsole::Array<Integer>.new] # Array<Integer> | The tags to associate to the asset group.
+  tags: [Rapid7VmConsole::Array<Integer>.new] # Array<Integer> | The tags to associate to the asset group.
 }
 
 begin
@@ -892,7 +892,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the asset group. | 
- **param1** | **Array&lt;Integer&gt;**| The tags to associate to the asset group. | [optional] 
+ **tags** | **Array&lt;Integer&gt;**| The tags to associate to the asset group. | [optional] 
 
 ### Return type
 
@@ -926,7 +926,7 @@ api_instance = Rapid7VmConsole::AssetGroupApi.new
 id = 56 # Integer | The identifier of the asset group.
 
 opts = { 
-  param1: [Rapid7VmConsole::Array<Integer>.new] # Array<Integer> | The users to grant access to the asset group.
+  users: [Rapid7VmConsole::Array<Integer>.new] # Array<Integer> | The users to grant access to the asset group.
 }
 
 begin
@@ -943,7 +943,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the asset group. | 
- **param1** | **Array&lt;Integer&gt;**| The users to grant access to the asset group. | [optional] 
+ **users** | **Array&lt;Integer&gt;**| The users to grant access to the asset group. | [optional] 
 
 ### Return type
 
@@ -977,7 +977,7 @@ api_instance = Rapid7VmConsole::AssetGroupApi.new
 id = 56 # Integer | The identifier of the asset group.
 
 opts = { 
-  param1: Rapid7VmConsole::AssetGroup.new # AssetGroup | The details of the asset group.
+  asset_group: Rapid7VmConsole::AssetGroup.new # AssetGroup | The details of the asset group.
 }
 
 begin
@@ -994,7 +994,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the asset group. | 
- **param1** | [**AssetGroup**](AssetGroup.md)| The details of the asset group. | [optional] 
+ **asset_group** | [**AssetGroup**](AssetGroup.md)| The details of the asset group. | [optional] 
 
 ### Return type
 
@@ -1028,7 +1028,7 @@ api_instance = Rapid7VmConsole::AssetGroupApi.new
 id = 56 # Integer | The identifier of the asset group.
 
 opts = { 
-  param1: [Rapid7VmConsole::Array<Integer>.new] # Array<Integer> | The assets to place in the asset group. 
+  assets: [Rapid7VmConsole::Array<Integer>.new] # Array<Integer> | The assets to place in the asset group. 
 }
 
 begin
@@ -1045,7 +1045,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the asset group. | 
- **param1** | **Array&lt;Integer&gt;**| The assets to place in the asset group.  | [optional] 
+ **assets** | **Array&lt;Integer&gt;**| The assets to place in the asset group.  | [optional] 
 
 ### Return type
 

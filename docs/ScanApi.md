@@ -236,7 +236,7 @@ api_instance = Rapid7VmConsole::ScanApi.new
 id = 56 # Integer | The identifier of the site.
 
 opts = { 
-  param1: Rapid7VmConsole::AdhocScan.new # AdhocScan | The details for the scan.
+  scan: Rapid7VmConsole::AdhocScan.new # AdhocScan | The details for the scan.
 }
 
 begin
@@ -253,7 +253,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the site. | 
- **param1** | [**AdhocScan**](AdhocScan.md)| The details for the scan. | [optional] 
+ **scan** | [**AdhocScan**](AdhocScan.md)| The details for the scan. | [optional] 
 
 ### Return type
 

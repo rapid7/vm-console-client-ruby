@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **Integer** | The identifier of the vulnerability to which the exception applies. | [optional] 
+**id** | **Integer** | The identifier of the scope type to which the exception applies. For example in a site scoped vulnerability exception this is the site id, in an asset group vulnerability exception this is the asset group id. | [optional] 
 **key** | **String** | If the scope type is &#x60;\&quot;Instance\&quot;&#x60;, an optional key to discriminate the instance the exception applies to. | [optional] 
 **links** | [**Array&lt;Link&gt;**](Link.md) |  | [optional] 
 **port** | **Integer** | If the scope type is &#x60;\&quot;Instance\&quot;&#x60; and the vulnerability is detected on a service, the port on which the exception applies. | [optional] 

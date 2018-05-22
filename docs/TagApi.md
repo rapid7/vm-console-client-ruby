@@ -42,7 +42,7 @@ require 'rapid7_vm_console'
 api_instance = Rapid7VmConsole::TagApi.new
 
 opts = { 
-  param0: Rapid7VmConsole::Tag.new # Tag | The details of the tag.
+  tag: Rapid7VmConsole::Tag.new # Tag | The details of the tag.
 }
 
 begin
@@ -58,7 +58,7 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **param0** | [**Tag**](Tag.md)| The details of the tag. | [optional] 
+ **tag** | [**Tag**](Tag.md)| The details of the tag. | [optional] 
 
 ### Return type
 
@@ -524,7 +524,7 @@ api_instance = Rapid7VmConsole::TagApi.new
 id = 56 # Integer | The identifier of the tag.
 
 opts = { 
-  param1: [Rapid7VmConsole::Array<Integer>.new] # Array<Integer> | The asset groups to add to the tag.
+  asset_group_ids: [Rapid7VmConsole::Array<Integer>.new] # Array<Integer> | The asset groups to add to the tag.
 }
 
 begin
@@ -541,7 +541,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the tag. | 
- **param1** | **Array&lt;Integer&gt;**| The asset groups to add to the tag. | [optional] 
+ **asset_group_ids** | **Array&lt;Integer&gt;**| The asset groups to add to the tag. | [optional] 
 
 ### Return type
 
@@ -575,7 +575,7 @@ api_instance = Rapid7VmConsole::TagApi.new
 id = 56 # Integer | The identifier of the tag.
 
 opts = { 
-  param1: [Rapid7VmConsole::Array<Integer>.new] # Array<Integer> | The sites to add to the tag.
+  sites: [Rapid7VmConsole::Array<Integer>.new] # Array<Integer> | The sites to add to the tag.
 }
 
 begin
@@ -592,7 +592,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the tag. | 
- **param1** | **Array&lt;Integer&gt;**| The sites to add to the tag. | [optional] 
+ **sites** | **Array&lt;Integer&gt;**| The sites to add to the tag. | [optional] 
 
 ### Return type
 
@@ -973,7 +973,7 @@ api_instance = Rapid7VmConsole::TagApi.new
 id = 56 # Integer | The identifier of the tag.
 
 opts = { 
-  param0: Rapid7VmConsole::Tag.new # Tag | The details of the tag.
+  tag: Rapid7VmConsole::Tag.new # Tag | The details of the tag.
 }
 
 begin
@@ -990,7 +990,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the tag. | 
- **param0** | [**Tag**](Tag.md)| The details of the tag. | [optional] 
+ **tag** | [**Tag**](Tag.md)| The details of the tag. | [optional] 
 
 ### Return type
 
@@ -1024,7 +1024,7 @@ api_instance = Rapid7VmConsole::TagApi.new
 id = 56 # Integer | The identifier of the tag.
 
 opts = { 
-  param1: Rapid7VmConsole::SearchCriteria.new # SearchCriteria | The details of the search criteria.
+  criterial: Rapid7VmConsole::SearchCriteria.new # SearchCriteria | The details of the search criteria.
 }
 
 begin
@@ -1041,7 +1041,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the tag. | 
- **param1** | [**SearchCriteria**](SearchCriteria.md)| The details of the search criteria. | [optional] 
+ **criterial** | [**SearchCriteria**](SearchCriteria.md)| The details of the search criteria. | [optional] 
 
 ### Return type
 

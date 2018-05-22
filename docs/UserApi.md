@@ -8,6 +8,7 @@ Method | HTTP request | Description
 [**add_user_site**](UserApi.md#add_user_site) | **PUT** /api/3/users/{id}/sites/{siteId} | Site Access
 [**create_user**](UserApi.md#create_user) | **POST** /api/3/users | Users
 [**delete_role**](UserApi.md#delete_role) | **DELETE** /api/3/roles/{id} | Role
+[**delete_user**](UserApi.md#delete_user) | **DELETE** /api/3/users/{id} | User
 [**get_authentication_source**](UserApi.md#get_authentication_source) | **GET** /api/3/authentication_sources/{id} | Authentication Source
 [**get_authentication_source_users**](UserApi.md#get_authentication_source_users) | **GET** /api/3/authentication_sources/{id}/users | Authentication Source Users
 [**get_authentication_sources**](UserApi.md#get_authentication_sources) | **GET** /api/3/authentication_sources | Authentication Sources
@@ -152,7 +153,7 @@ require 'rapid7_vm_console'
 api_instance = Rapid7VmConsole::UserApi.new
 
 opts = { 
-  param0: Rapid7VmConsole::User.new # User | The details of the user.
+  user: Rapid7VmConsole::UserEdit.new # UserEdit | The details of the user.
 }
 
 begin
@@ -168,7 +169,7 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **param0** | [**User**](User.md)| The details of the user. | [optional] 
+ **user** | [**UserEdit**](UserEdit.md)| The details of the user. | [optional] 
 
 ### Return type
 
@@ -216,6 +217,53 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **String**| The identifier of the role. | 
+
+### Return type
+
+[**Links**](Links.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json;charset=UTF-8
+
+
+
+# **delete_user**
+> Links delete_user(id)
+
+User
+
+Deletes a user account.<span class=\"authorization\">Global Administrator</span>
+
+### Example
+```ruby
+# load the gem
+require 'rapid7_vm_console'
+
+api_instance = Rapid7VmConsole::UserApi.new
+
+id = 56 # Integer | The identifier of the user.
+
+
+begin
+  #User
+  result = api_instance.delete_user(id)
+  p result
+rescue Rapid7VmConsole::ApiError => e
+  puts "Exception when calling UserApi->delete_user: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **Integer**| The identifier of the user. | 
 
 ### Return type
 
@@ -1182,7 +1230,7 @@ api_instance = Rapid7VmConsole::UserApi.new
 id = 56 # Integer | The identifier of the user.
 
 opts = { 
-  param1: "param1_example" # String | The new password to set.
+  password: "password_example" # String | The new password to set.
 }
 
 begin
@@ -1199,7 +1247,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the user. | 
- **param1** | **String**| The new password to set. | [optional] 
+ **password** | **String**| The new password to set. | [optional] 
 
 ### Return type
 
@@ -1233,7 +1281,7 @@ api_instance = Rapid7VmConsole::UserApi.new
 id = 56 # Integer | The identifier of the user.
 
 opts = { 
-  param1: "param1_example" # String | The authentication token seed (key) to use for the user.
+  token: "token_example" # String | The authentication token seed (key) to use for the user.
 }
 
 begin
@@ -1250,7 +1298,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the user. | 
- **param1** | **String**| The authentication token seed (key) to use for the user. | [optional] 
+ **token** | **String**| The authentication token seed (key) to use for the user. | [optional] 
 
 ### Return type
 
@@ -1284,7 +1332,7 @@ api_instance = Rapid7VmConsole::UserApi.new
 id = 56 # Integer | The identifier of the user.
 
 opts = { 
-  param1: [Rapid7VmConsole::Array<Integer>.new] # Array<Integer> | The identifiers of the asset groups to grant the user access to. Ignored if user has access to `allAssetGroups`.
+  asset_group_ids: [Rapid7VmConsole::Array<Integer>.new] # Array<Integer> | The identifiers of the asset groups to grant the user access to. Ignored if user has access to `allAssetGroups`.
 }
 
 begin
@@ -1301,7 +1349,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the user. | 
- **param1** | **Array&lt;Integer&gt;**| The identifiers of the asset groups to grant the user access to. Ignored if user has access to &#x60;allAssetGroups&#x60;. | [optional] 
+ **asset_group_ids** | **Array&lt;Integer&gt;**| The identifiers of the asset groups to grant the user access to. Ignored if user has access to &#x60;allAssetGroups&#x60;. | [optional] 
 
 ### Return type
 
@@ -1335,7 +1383,7 @@ api_instance = Rapid7VmConsole::UserApi.new
 id = 56 # Integer | The identifier of the user.
 
 opts = { 
-  param1: [Rapid7VmConsole::Array<Integer>.new] # Array<Integer> | The identifiers of the sites to grant the user access to. Ignored if the user has access to `allSites`.
+  site_ids: [Rapid7VmConsole::Array<Integer>.new] # Array<Integer> | The identifiers of the sites to grant the user access to. Ignored if the user has access to `allSites`.
 }
 
 begin
@@ -1352,7 +1400,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the user. | 
- **param1** | **Array&lt;Integer&gt;**| The identifiers of the sites to grant the user access to. Ignored if the user has access to &#x60;allSites&#x60;. | [optional] 
+ **site_ids** | **Array&lt;Integer&gt;**| The identifiers of the sites to grant the user access to. Ignored if the user has access to &#x60;allSites&#x60;. | [optional] 
 
 ### Return type
 
@@ -1433,7 +1481,7 @@ api_instance = Rapid7VmConsole::UserApi.new
 id = "id_example" # String | The identifier of the role.
 
 opts = { 
-  param0: Rapid7VmConsole::Role.new # Role | The details of the role.
+  role: Rapid7VmConsole::Role.new # Role | The details of the role.
 }
 
 begin
@@ -1450,7 +1498,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **String**| The identifier of the role. | 
- **param0** | [**Role**](Role.md)| The details of the role. | [optional] 
+ **role** | [**Role**](Role.md)| The details of the role. | [optional] 
 
 ### Return type
 
@@ -1484,7 +1532,7 @@ api_instance = Rapid7VmConsole::UserApi.new
 id = 56 # Integer | The identifier of the user.
 
 opts = { 
-  param1: Rapid7VmConsole::User.new # User | The details of the user.
+  user: Rapid7VmConsole::UserEdit.new # UserEdit | The details of the user.
 }
 
 begin
@@ -1501,7 +1549,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the user. | 
- **param1** | [**User**](User.md)| The details of the user. | [optional] 
+ **user** | [**UserEdit**](UserEdit.md)| The details of the user. | [optional] 
 
 ### Return type
 
