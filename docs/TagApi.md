@@ -372,11 +372,11 @@ require 'rapid7_vm_console'
 api_instance = Rapid7VmConsole::TagApi.new
 
 opts = { 
-  name: "name_example", # String | name
-  type: "type_example", # String | type
+  name: 'name_example', # String | name
+  type: 'type_example', # String | type
   page: 0, # Integer | The index of the page (zero-based) to retrieve.
   size: 10, # Integer | The number of records per page to retrieve.
-  sort: ["sort_example"] # Array<String> | The criteria to sort the records by, in the format: `property[,ASC|DESC]`. The default sort order is ascending. Multiple sort criteria can be specified using multiple sort query parameters.
+  sort: ['sort_example'] # Array<String> | The criteria to sort the records by, in the format: `property[,ASC|DESC]`. The default sort order is ascending. Multiple sort criteria can be specified using multiple sort query parameters.
 }
 
 begin

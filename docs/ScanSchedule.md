@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **links** | [**Array&lt;Link&gt;**](Link.md) |  | [optional] 
 **next_runtimes** | **Array&lt;String&gt;** | List the next 10 dates in the future the schedule will launch.  | [optional] 
 **on_scan_repeat** | **String** | Specifies the desired behavior of a repeating scheduled scan when the previous scan was paused due to reaching is maximum duration. The following table describes each supported value:  | Value | Description |  | ---------- | ---------------- |  | restart-scan | Stops the previously-paused scan and launches a new scan if the previous scan did not complete within the specified duration. If the previous scheduled scan was not paused, then a new scan is launched. |  | resume-scan | Resumes the previously-paused scan if the previous scan did not complete within the specified duration. If the previous scheduled scan was not paused, then a new scan is launched. |   | 
-**repeat** | [**ReportRepeat**](ReportRepeat.md) | Settings for repeating a scheduled task. | [optional] 
+**repeat** | [**Repeat**](Repeat.md) | Settings for repeating a scheduled scan. | [optional] 
 **scan_engine_id** | **Integer** | The identifier of the scan engine to be used for this scan schedule. If not set, the site&#39;s assigned scan engine will be used. | [optional] 
 **scan_name** | **String** | A user-defined name for the scan launched by the schedule. If not explicitly set in the schedule, the scan name will be generated prior to the scan launching. Scan names must be unique within the site&#39;s scan schedules. | [optional] 
 **scan_template_id** | **String** | The identifier of the scan template to be used for this scan schedule. If not set, the site&#39;s assigned scan template will be used. | [optional] 

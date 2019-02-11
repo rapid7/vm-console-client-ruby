@@ -73,7 +73,7 @@ require 'rapid7_vm_console'
 
 api_instance = Rapid7VmConsole::ScanTemplateApi.new
 
-id = "id_example" # String | The identifier of the scan template
+id = 'id_example' # String | The identifier of the scan template
 
 
 begin
@@ -120,7 +120,7 @@ require 'rapid7_vm_console'
 
 api_instance = Rapid7VmConsole::ScanTemplateApi.new
 
-id = "id_example" # String | The identifier of the scan template
+id = 'id_example' # String | The identifier of the scan template
 
 
 begin
@@ -208,7 +208,7 @@ require 'rapid7_vm_console'
 
 api_instance = Rapid7VmConsole::ScanTemplateApi.new
 
-id = "id_example" # String | The identifier of the scan template
+id = 'id_example' # String | The identifier of the scan template
 
 opts = { 
   scan_template: Rapid7VmConsole::ScanTemplate.new # ScanTemplate | The details of the scan template.

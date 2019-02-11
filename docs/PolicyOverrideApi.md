@@ -267,7 +267,7 @@ api_instance = Rapid7VmConsole::PolicyOverrideApi.new
 opts = { 
   page: 0, # Integer | The index of the page (zero-based) to retrieve.
   size: 10, # Integer | The number of records per page to retrieve.
-  sort: ["sort_example"] # Array<String> | The criteria to sort the records by, in the format: `property[,ASC|DESC]`. The default sort order is ascending. Multiple sort criteria can be specified using multiple sort query parameters.
+  sort: ['sort_example'] # Array<String> | The criteria to sort the records by, in the format: `property[,ASC|DESC]`. The default sort order is ascending. Multiple sort criteria can be specified using multiple sort query parameters.
 }
 
 begin
@@ -319,7 +319,7 @@ api_instance = Rapid7VmConsole::PolicyOverrideApi.new
 id = 789 # Integer | The identifier of the policy override.
 
 opts = { 
-  expiration: "expiration_example" # String | The date the policy override is set to expire. Date is represented in ISO 8601 format.
+  expiration: 'expiration_example' # String | The date the policy override is set to expire. Date is represented in ISO 8601 format.
 }
 
 begin
@@ -369,10 +369,10 @@ api_instance = Rapid7VmConsole::PolicyOverrideApi.new
 
 id = 789 # Integer | The identifier of the policy override.
 
-status = "status_example" # String | Policy Override Status
+status = 'status_example' # String | Policy Override Status
 
 opts = { 
-  comment: "comment_example" # String | A comment describing the change of the policy override status.
+  comment: 'comment_example' # String | A comment describing the change of the policy override status.
 }
 
 begin
