@@ -198,7 +198,7 @@ param1 = Rapid7VmConsole::SearchCriteria.new # SearchCriteria | param1
 opts = { 
   page: 0, # Integer | The index of the page (zero-based) to retrieve.
   size: 10, # Integer | The number of records per page to retrieve.
-  sort: ["sort_example"] # Array<String> | The criteria to sort the records by, in the format: `property[,ASC|DESC]`. The default sort order is ascending. Multiple sort criteria can be specified using multiple sort query parameters.
+  sort: ['sort_example'] # Array<String> | The criteria to sort the records by, in the format: `property[,ASC|DESC]`. The default sort order is ascending. Multiple sort criteria can be specified using multiple sort query parameters.
 }
 
 begin
@@ -391,7 +391,7 @@ api_instance = Rapid7VmConsole::AssetApi.new
 
 id = 789 # Integer | The identifier of the asset.
 
-protocol = "protocol_example" # String | The protocol of the service.
+protocol = 'protocol_example' # String | The protocol of the service.
 
 port = 56 # Integer | The port of the service.
 
@@ -444,7 +444,7 @@ api_instance = Rapid7VmConsole::AssetApi.new
 
 id = 789 # Integer | The identifier of the asset.
 
-protocol = "protocol_example" # String | The protocol of the service.
+protocol = 'protocol_example' # String | The protocol of the service.
 
 port = 56 # Integer | The port of the service.
 
@@ -497,7 +497,7 @@ api_instance = Rapid7VmConsole::AssetApi.new
 
 id = 789 # Integer | The identifier of the asset.
 
-protocol = "protocol_example" # String | The protocol of the service.
+protocol = 'protocol_example' # String | The protocol of the service.
 
 port = 56 # Integer | The port of the service.
 
@@ -550,7 +550,7 @@ api_instance = Rapid7VmConsole::AssetApi.new
 
 id = 789 # Integer | The identifier of the asset.
 
-protocol = "protocol_example" # String | The protocol of the service.
+protocol = 'protocol_example' # String | The protocol of the service.
 
 port = 56 # Integer | The port of the service.
 
@@ -603,7 +603,7 @@ api_instance = Rapid7VmConsole::AssetApi.new
 
 id = 789 # Integer | The identifier of the asset.
 
-protocol = "protocol_example" # String | The protocol of the service.
+protocol = 'protocol_example' # String | The protocol of the service.
 
 port = 56 # Integer | The port of the service.
 
@@ -656,7 +656,7 @@ api_instance = Rapid7VmConsole::AssetApi.new
 
 id = 789 # Integer | The identifier of the asset.
 
-protocol = "protocol_example" # String | The protocol of the service.
+protocol = 'protocol_example' # String | The protocol of the service.
 
 port = 56 # Integer | The port of the service.
 
@@ -712,7 +712,7 @@ api_instance = Rapid7VmConsole::AssetApi.new
 
 id = 789 # Integer | The identifier of the asset.
 
-protocol = "protocol_example" # String | The protocol of the service.
+protocol = 'protocol_example' # String | The protocol of the service.
 
 port = 56 # Integer | The port of the service.
 
@@ -1001,7 +1001,7 @@ api_instance = Rapid7VmConsole::AssetApi.new
 opts = { 
   page: 0, # Integer | The index of the page (zero-based) to retrieve.
   size: 10, # Integer | The number of records per page to retrieve.
-  sort: ["sort_example"] # Array<String> | The criteria to sort the records by, in the format: `property[,ASC|DESC]`. The default sort order is ascending. Multiple sort criteria can be specified using multiple sort query parameters.
+  sort: ['sort_example'] # Array<String> | The criteria to sort the records by, in the format: `property[,ASC|DESC]`. The default sort order is ascending. Multiple sort criteria can be specified using multiple sort query parameters.
 }
 
 begin
@@ -1100,7 +1100,7 @@ api_instance = Rapid7VmConsole::AssetApi.new
 opts = { 
   page: 0, # Integer | The index of the page (zero-based) to retrieve.
   size: 10, # Integer | The number of records per page to retrieve.
-  sort: ["sort_example"] # Array<String> | The criteria to sort the records by, in the format: `property[,ASC|DESC]`. The default sort order is ascending. Multiple sort criteria can be specified using multiple sort query parameters.
+  sort: ['sort_example'] # Array<String> | The criteria to sort the records by, in the format: `property[,ASC|DESC]`. The default sort order is ascending. Multiple sort criteria can be specified using multiple sort query parameters.
 }
 
 begin
@@ -1199,7 +1199,7 @@ api_instance = Rapid7VmConsole::AssetApi.new
 opts = { 
   page: 0, # Integer | The index of the page (zero-based) to retrieve.
   size: 10, # Integer | The number of records per page to retrieve.
-  sort: ["sort_example"] # Array<String> | The criteria to sort the records by, in the format: `property[,ASC|DESC]`. The default sort order is ascending. Multiple sort criteria can be specified using multiple sort query parameters.
+  sort: ['sort_example'] # Array<String> | The criteria to sort the records by, in the format: `property[,ASC|DESC]`. The default sort order is ascending. Multiple sort criteria can be specified using multiple sort query parameters.
 }
 
 begin

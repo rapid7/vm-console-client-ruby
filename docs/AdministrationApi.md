@@ -27,8 +27,8 @@ require 'rapid7_vm_console'
 api_instance = Rapid7VmConsole::AdministrationApi.new
 
 opts = { 
-  license: File.new("/path/to/file.txt"), # File | The contents of a license (.lic) file.
-  key: "key_example" # String | A license activation key.
+  license: File.new('/path/to/file.txt'), # File | The contents of a license (.lic) file.
+  key: 'key_example' # String | A license activation key.
 }
 
 begin
@@ -77,7 +77,7 @@ require 'rapid7_vm_console'
 api_instance = Rapid7VmConsole::AdministrationApi.new
 
 opts = { 
-  command: "command_example" # String | The console command to execute.
+  command: 'command_example' # String | The console command to execute.
 }
 
 begin

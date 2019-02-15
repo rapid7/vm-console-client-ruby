@@ -7,8 +7,12 @@ Method | HTTP request | Description
 [**add_scan_engine_pool_scan_engine**](ScanEngineApi.md#add_scan_engine_pool_scan_engine) | **PUT** /api/3/scan_engine_pools/{id}/engines/{engineId} | Engine Pool Engines
 [**create_scan_engine**](ScanEngineApi.md#create_scan_engine) | **POST** /api/3/scan_engines | Scan Engines
 [**create_scan_engine_pool**](ScanEngineApi.md#create_scan_engine_pool) | **POST** /api/3/scan_engine_pools | Engine Pools
+[**create_shared_secret**](ScanEngineApi.md#create_shared_secret) | **POST** /api/3/scan_engines/shared_secret | Scan Engine Shared Secret
 [**delete_scan_engine**](ScanEngineApi.md#delete_scan_engine) | **DELETE** /api/3/scan_engines/{id} | Scan Engine
+[**delete_shared_secret**](ScanEngineApi.md#delete_shared_secret) | **DELETE** /api/3/scan_engines/shared_secret | Scan Engine Shared Secret
 [**get_assigned_engine_pools**](ScanEngineApi.md#get_assigned_engine_pools) | **GET** /api/3/scan_engines/{id}/scan_engine_pools | Assigned Engine Pools
+[**get_current_shared_secret**](ScanEngineApi.md#get_current_shared_secret) | **GET** /api/3/scan_engines/shared_secret | Scan Engine Shared Secret
+[**get_current_shared_secret_time_to_live**](ScanEngineApi.md#get_current_shared_secret_time_to_live) | **GET** /api/3/scan_engines/shared_secret/time_to_live | Scan Engine Shared Secret Time to live
 [**get_engine_pool**](ScanEngineApi.md#get_engine_pool) | **GET** /api/3/scan_engine_pools/{id} | Engine Pool
 [**get_scan_engine**](ScanEngineApi.md#get_scan_engine) | **GET** /api/3/scan_engines/{id} | Scan Engine
 [**get_scan_engine_pool_scan_engines**](ScanEngineApi.md#get_scan_engine_pool_scan_engines) | **GET** /api/3/scan_engine_pools/{id}/engines | Engine Pool Engines
@@ -170,6 +174,47 @@ No authorization required
 
 
 
+# **create_shared_secret**
+> String create_shared_secret
+
+Scan Engine Shared Secret
+
+Returns the current valid shared secret or generates a new shared secret. The endpoint returns an existing shared secret if one was previously generated and it has not yet expired. Conversely, the endpoint will generate and return a new shared secret for either of the following conditions: a shared secret was not previously generated or the previously-generated shared secret has expired. The shared secret is valid for 60 minutes from the moment it is generated.
+
+### Example
+```ruby
+# load the gem
+require 'rapid7_vm_console'
+
+api_instance = Rapid7VmConsole::ScanEngineApi.new
+
+begin
+  #Scan Engine Shared Secret
+  result = api_instance.create_shared_secret
+  p result
+rescue Rapid7VmConsole::ApiError => e
+  puts "Exception when calling ScanEngineApi->create_shared_secret: #{e}"
+end
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+**String**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json;charset=UTF-8
+
+
+
 # **delete_scan_engine**
 > Links delete_scan_engine(id)
 
@@ -201,6 +246,47 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the scan engine. | 
+
+### Return type
+
+[**Links**](Links.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json;charset=UTF-8
+
+
+
+# **delete_shared_secret**
+> Links delete_shared_secret
+
+Scan Engine Shared Secret
+
+Revokes the current valid shared secret, if one exists.
+
+### Example
+```ruby
+# load the gem
+require 'rapid7_vm_console'
+
+api_instance = Rapid7VmConsole::ScanEngineApi.new
+
+begin
+  #Scan Engine Shared Secret
+  result = api_instance.delete_shared_secret
+  p result
+rescue Rapid7VmConsole::ApiError => e
+  puts "Exception when calling ScanEngineApi->delete_shared_secret: #{e}"
+end
+```
+
+### Parameters
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -252,6 +338,88 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**ResourcesEnginePool**](ResourcesEnginePool.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json;charset=UTF-8
+
+
+
+# **get_current_shared_secret**
+> String get_current_shared_secret
+
+Scan Engine Shared Secret
+
+Returns the current valid shared secret, if one has been previously generated and it has not yet expired; otherwise the endpoint will respond with a 404 status code. Use this endpoint to detect whether a previously-generated shared secret is still valid.
+
+### Example
+```ruby
+# load the gem
+require 'rapid7_vm_console'
+
+api_instance = Rapid7VmConsole::ScanEngineApi.new
+
+begin
+  #Scan Engine Shared Secret
+  result = api_instance.get_current_shared_secret
+  p result
+rescue Rapid7VmConsole::ApiError => e
+  puts "Exception when calling ScanEngineApi->get_current_shared_secret: #{e}"
+end
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+**String**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json;charset=UTF-8
+
+
+
+# **get_current_shared_secret_time_to_live**
+> Integer get_current_shared_secret_time_to_live
+
+Scan Engine Shared Secret Time to live
+
+Returns the number of seconds remaining for the current shared secret before it expires, if one has been previously generated and it has not yet expired; otherwise the endpoint will respond with a 404 status code.
+
+### Example
+```ruby
+# load the gem
+require 'rapid7_vm_console'
+
+api_instance = Rapid7VmConsole::ScanEngineApi.new
+
+begin
+  #Scan Engine Shared Secret Time to live
+  result = api_instance.get_current_shared_secret_time_to_live
+  p result
+rescue Rapid7VmConsole::ApiError => e
+  puts "Exception when calling ScanEngineApi->get_current_shared_secret_time_to_live: #{e}"
+end
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+**Integer**
 
 ### Authorization
 
@@ -512,7 +680,7 @@ id = 56 # Integer | The identifier of the scan engine.
 opts = { 
   page: 0, # Integer | The index of the page (zero-based) to retrieve.
   size: 10, # Integer | The number of records per page to retrieve.
-  sort: ["sort_example"] # Array<String> | The criteria to sort the records by, in the format: `property[,ASC|DESC]`. The default sort order is ascending. Multiple sort criteria can be specified using multiple sort query parameters.
+  sort: ['sort_example'] # Array<String> | The criteria to sort the records by, in the format: `property[,ASC|DESC]`. The default sort order is ascending. Multiple sort criteria can be specified using multiple sort query parameters.
 }
 
 begin
@@ -567,7 +735,7 @@ id = 56 # Integer | The identifier of the scan engine.
 opts = { 
   page: 0, # Integer | The index of the page (zero-based) to retrieve.
   size: 10, # Integer | The number of records per page to retrieve.
-  sort: ["sort_example"] # Array<String> | The criteria to sort the records by, in the format: `property[,ASC|DESC]`. The default sort order is ascending. Multiple sort criteria can be specified using multiple sort query parameters.
+  sort: ['sort_example'] # Array<String> | The criteria to sort the records by, in the format: `property[,ASC|DESC]`. The default sort order is ascending. Multiple sort criteria can be specified using multiple sort query parameters.
 }
 
 begin

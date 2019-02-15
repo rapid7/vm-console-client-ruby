@@ -76,7 +76,7 @@ opts = {
   active: false, # BOOLEAN | Return running scans or past scans (true/false value).
   page: 0, # Integer | The index of the page (zero-based) to retrieve.
   size: 10, # Integer | The number of records per page to retrieve.
-  sort: ["sort_example"] # Array<String> | The criteria to sort the records by, in the format: `property[,ASC|DESC]`. The default sort order is ascending. Multiple sort criteria can be specified using multiple sort query parameters.
+  sort: ['sort_example'] # Array<String> | The criteria to sort the records by, in the format: `property[,ASC|DESC]`. The default sort order is ascending. Multiple sort criteria can be specified using multiple sort query parameters.
 }
 
 begin
@@ -132,7 +132,7 @@ opts = {
   active: false, # BOOLEAN | Return running scans or past scans (true/false value).
   page: 0, # Integer | The index of the page (zero-based) to retrieve.
   size: 10, # Integer | The number of records per page to retrieve.
-  sort: ["sort_example"] # Array<String> | The criteria to sort the records by, in the format: `property[,ASC|DESC]`. The default sort order is ascending. Multiple sort criteria can be specified using multiple sort query parameters.
+  sort: ['sort_example'] # Array<String> | The criteria to sort the records by, in the format: `property[,ASC|DESC]`. The default sort order is ascending. Multiple sort criteria can be specified using multiple sort query parameters.
 }
 
 begin
@@ -185,7 +185,7 @@ api_instance = Rapid7VmConsole::ScanApi.new
 
 id = 789 # Integer | The identifier of the scan.
 
-status = "status_example" # String | The status of the scan.
+status = 'status_example' # String | The status of the scan.
 
 
 begin
@@ -236,6 +236,7 @@ api_instance = Rapid7VmConsole::ScanApi.new
 id = 56 # Integer | The identifier of the site.
 
 opts = { 
+  override_blackout: false, # BOOLEAN | ${override.blackout}
   scan: Rapid7VmConsole::AdhocScan.new # AdhocScan | The details for the scan.
 }
 
@@ -253,6 +254,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| The identifier of the site. | 
+ **override_blackout** | **BOOLEAN**| ${override.blackout} | [optional] [default to false]
  **scan** | [**AdhocScan**](AdhocScan.md)| The details for the scan. | [optional] 
 
 ### Return type

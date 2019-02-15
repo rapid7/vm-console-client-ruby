@@ -23,7 +23,7 @@ api_instance = Rapid7VmConsole::RemediationApi.new
 
 id = 789 # Integer | The identifier of the asset.
 
-vulnerability_id = "vulnerability_id_example" # String | The identifier of the vulnerability.
+vulnerability_id = 'vulnerability_id_example' # String | The identifier of the vulnerability.
 
 
 begin

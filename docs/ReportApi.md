@@ -130,7 +130,7 @@ api_instance = Rapid7VmConsole::ReportApi.new
 
 id = 56 # Integer | The identifier of the report.
 
-instance = "instance_example" # String | The identifier of the report instance.
+instance = 'instance_example' # String | The identifier of the report instance.
 
 
 begin
@@ -180,7 +180,7 @@ api_instance = Rapid7VmConsole::ReportApi.new
 
 id = 56 # Integer | The identifier of the report.
 
-instance = "instance_example" # String | The identifier of the report instance.
+instance = 'instance_example' # String | The identifier of the report instance.
 
 
 begin
@@ -365,7 +365,7 @@ api_instance = Rapid7VmConsole::ReportApi.new
 
 id = 56 # Integer | The identifier of the report.
 
-instance = "instance_example" # String | The identifier of the report instance.
+instance = 'instance_example' # String | The identifier of the report instance.
 
 
 begin
@@ -460,7 +460,7 @@ require 'rapid7_vm_console'
 
 api_instance = Rapid7VmConsole::ReportApi.new
 
-id = "id_example" # String | The identifier of the report template;
+id = 'id_example' # String | The identifier of the report template;
 
 
 begin
@@ -551,7 +551,7 @@ api_instance = Rapid7VmConsole::ReportApi.new
 opts = { 
   page: 0, # Integer | The index of the page (zero-based) to retrieve.
   size: 10, # Integer | The number of records per page to retrieve.
-  sort: ["sort_example"] # Array<String> | The criteria to sort the records by, in the format: `property[,ASC|DESC]`. The default sort order is ascending. Multiple sort criteria can be specified using multiple sort query parameters.
+  sort: ['sort_example'] # Array<String> | The criteria to sort the records by, in the format: `property[,ASC|DESC]`. The default sort order is ascending. Multiple sort criteria can be specified using multiple sort query parameters.
 }
 
 begin
