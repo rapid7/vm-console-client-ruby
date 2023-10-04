@@ -1,0 +1,16 @@
+---
+info:
+  title: Vm Console Client Ruby
+  description: The UNOFFICIAL (but useful) Ruby gem for the Rapid7 InsightVM/Nexpose
+    RESTful API
+  x-cortex-git:
+    github:
+      alias: r7org
+      repository: rapid7/vm-console-client-ruby
+  x-cortex-tag: vm-console-client-ruby
+  x-cortex-type: service
+  x-cortex-domain-parents:
+  - tag: vm-console
+openapi: 3.0.1
+servers:
+- url: "/"
