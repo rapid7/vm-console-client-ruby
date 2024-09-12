@@ -1,3 +1,8 @@
+# ARCHIVED 
+
+This repository is not supported or maintained.
+Clients for other languages can be generated from the Swagger specification. Note that generated clients are not officially supported or maintained by Rapid7.
+
 # rapid7_vm_console
 
 Rapid7VmConsole - the __UNOFFICIAL__ (but useful) Ruby gem for the Rapid7 InsightVM/Nexpose RESTful API
